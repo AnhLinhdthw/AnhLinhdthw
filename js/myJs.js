@@ -14,9 +14,9 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'Hii Chị Linh 😆😆',
-        text: 'Em có điều này muốn hỏi chị nhớ phải trả lời thật lòng nhaaa.',
-        imageUrl: 'img/Linh.jpg',
+        title: 'Anh rất iuu em!',
+        text: 'Anh muốn khẳng định tình iuu của chúng mình nên em hãy bấm OK đi nào 😎',
+        imageUrl: 'img/cuteCat.gif',
         imageWidth: 300,
         imageHeight: 300,
         background: '#fff url("img/iput-bg.jpg")',
@@ -28,7 +28,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-     var audio = new Audio('sound/switch.mp3');
+    var audio = new Audio('sound/duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -41,7 +41,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('sound/switch.mp3');
+    var audio = new Audio('sound/Swish1.mp3');
     audio.play();
     if (screen.width<=600) {
         var x = Math.random() * 300;
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì em đẹp trai còn dthw vll :)) ";
+    var text = " Vì anh là định mệnh của em 😝😝 ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,11 +96,11 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho em lí do chị thích em đi :vvvv',
+        title: 'Nói cho anh lí do em thích anh đi kkk',
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyy 😆'>",
+        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Tại sao vậyyy 🤣'>",
         background: '#fff url("img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
@@ -109,23 +109,23 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Thôi ngại lém :<<",
+        cancelButtonText: "Em ngại quá 🤣",
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho e đi <3'
+        confirmButtonText: 'Gửi cho anh liền đi <3'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
-                confirmButtonText: 'Okiiiii lun <3',
+                confirmButtonText: 'Okii anh <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Em biết mà ^^ Yêu chị hơn 3000 😁😁',
-                text: "Còn chờ gì nữa hãy inbox cho em đi nàoooooo",
+                title: 'Anh iu em mãi mãi ',
+                text: "Giờ thì ib anh đi (đang rất nhớ em r 😘)",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'https://www.facebook.com/profile.php?id=100011036761690';
+                    window.location = 'http://fb.com';
                   }
             })
         }
